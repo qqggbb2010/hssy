@@ -1,0 +1,37 @@
+New log file opened at Tue Mar 15 14:29:45 CST 2016 by 7620@USER-20150615IW
+Taking next connection to: 56332
+New client attempting to connect on port: 56333-56332
+  Address = /192.168.199.184:56332
+This client on port 56333 has uuid 8f717a07-0dd1-4572-87ef-87387e01c7ef configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-8f717a07-0dd1-4572-87ef-87387e01c7ef
+Taking next connection to: 56332
+New client attempting to connect on port: 56334-56332
+  Address = /192.168.199.184:56332
+Handshake exception on socket: 56334
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 56332
+New client attempting to connect on port: 56335-56332
+  Address = /192.168.199.184:56332
+This client on port 56335 has uuid 727e8ced-4dc0-41a6-a2b4-33ac8d4016be configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-8f717a07-0dd1-4572-87ef-87387e01c7ef, activator-727e8ced-4dc0-41a6-a2b4-33ac8d4016be
+Taking next connection to: 56332
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 7620@USER-20150615IW logs at Tue Mar 15 14:32:45 CST 2016, goodbye.

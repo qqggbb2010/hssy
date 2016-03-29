@@ -1,0 +1,13 @@
+ mainBUtton {
+     background: #000000;
+     color: white;
+ }
+
+
+/*a:hover {*/
+     /*color: #FF0000;*/
+     /*background-color: #262626;*/
+ /*}*/
+
+ .divcss5-abc a{ color:#000}/* css注释说明：超链接颜色为黑色 */
+ .divcss5-abc a:hover{ background:#262626; color:#FFF}
