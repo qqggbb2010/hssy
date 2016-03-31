@@ -12,7 +12,6 @@ import play.api.i18n.Messages.Implicits._
 class FormController @Inject() extends Controller {
   //显示留言列表和发言表单
   def m = Action {
-    println( "mmmmmmm " )
     Ok(views.html.msgboard(Message.list, Message.form))
   }
 
