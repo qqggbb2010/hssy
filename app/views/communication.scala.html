@@ -210,9 +210,9 @@
                       <!--百度地图容器-->
                     @*<div style="width:700px;height:550px;border:#ccc solid 1px;font-size:12px" id="map"></div>*@
                     <div style="width:800px;" id="allmap"></div>
-                    <div id="result" style="display: block">
-                      <input id="testBtn" type="button" value="默认样式" onclick="searchInfoWindow.open(marker);"/>
-                    </div>
+                    @*<div id="result" style="display: block">*@
+                      @*<input id="testBtn" type="button" value="默认样式" onclick="searchInfoWindow.open(marker);"/>*@
+                    @*</div>*@
                   </td>
                 </tr>
               </tbody>
@@ -282,7 +282,6 @@
                     '地址：北京市海淀区上地十街10号<br/>电话：(010)59928888<br/>简介：百度大厦位于北京市海淀区西二旗地铁站附近，为百度公司综合研发及办公总部。' +
                   '</div>';
 
-    alert("qqq");
     //创建检索信息窗口对象
     var searchInfoWindow = null;
     searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
@@ -297,14 +296,12 @@
         BMAPLIB_TAB_FROM_HERE //从这里出发
       ]
     });
-    alert("qqq");
     var marker = new BMap.Marker(poi); //创建marker对象
     marker.enableDragging(); //marker可拖拽
     marker.addEventListener("click", function(e){
 	    searchInfoWindow.open(marker);
     })
     map.addOverlay(marker); //在地图中添加marker
-    alert("qqq")
     $("#testBtn").click();
 
     alert("wwww")
